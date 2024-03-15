@@ -1,8 +1,13 @@
-import { myUrls } from "../events/doMap";
+const Images = ({ alt, url }) => {
+    return (
+        <div className="size-52 rounded-lg col-span-3 overflow-hidden">
+            <img
+                src={url}
+                alt={alt}
+                className="size-full object-cover transition-transform hover:scale-110"
+            />
+        </div>
+    );
+};
 
-function Images() {
-    myUrls.map((url, i) => {
-        return <img src={url} key={i} />;
-    });
-}
 export default Images;
