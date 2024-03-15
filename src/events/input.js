@@ -1,6 +1,6 @@
 let val;
 
-function inp (e){
-    val = e
+function inp(e) {
+    val = e;
 }
-export { inp , val}
+export { inp, val };
